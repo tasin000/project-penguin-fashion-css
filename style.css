@@ -9,6 +9,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -93,7 +103,7 @@ nav .nav-bar .nav-links a:hover{
 }
 
 .home .w-50 h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .home .w-50 h1 span{
@@ -117,7 +127,7 @@ nav .nav-bar .nav-links a:hover{
 }
 
 #womens-section h1, #mens-section h1{
-    margin: 20px 0;
+    margin: 20px 10px;
     font-size: 35px;
 }
 
@@ -200,4 +210,87 @@ footer{
     background-color: #0F172A;
     color: #fff;
     padding: 25px 0;
+}
+
+/* 1010px and less */
+@media screen and (max-width: 1010px){
+    /* navigation bar */
+    nav .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* home section */
+    #home-section h1{
+        font-size: 3rem;
+    }
+}
+
+/* 768px and less */
+@media screen and (max-width: 768px){
+    /* common codes */
+    .w-50{
+        width: 80%;
+    }
+
+    /* home section */
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .home img{
+        margin: 0;
+    }
+
+    .home .w-50{
+        margin: 5px;
+    }
+
+    /* women jackets and men jackets */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        margin: 10px 0;
+    }
+
+    /* benefits section */
+    .benefits{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .benefits .long-cards{
+        margin: 20px 0;
+    }
+}
+
+/* 600px and less */
+@media screen and (max-width: 600px){
+    /* common codes */
+    .w-50{
+        width: 95%;
+    }
+
+    /* navigation bar */
+    nav .nav-bar .logo img{
+        width: 250px;
+    }
+
+    nav .nav-bar .nav-links{
+        display: none;
+    }
+
+    /* women jackets and men jackets */
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        margin: 10px;
+    }
 }
