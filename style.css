@@ -1,0 +1,203 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* reset codes and common codes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: 0;
+    background-color: #A4BC46;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn i{
+    padding: 0 5px;
+}
+
+.btn:hover{
+    background-color: #363958;
+}
+
+.w-50{
+    width: 50%;
+}
+
+/* navigation bar design */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #f8f9fa;
+}
+
+nav .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav .nav-bar .logo img{
+    width: 400px;
+    cursor: pointer;
+}
+
+nav .nav-bar .nav-links a{
+    text-decoration: none;
+    margin: 0 15px;
+    color: #a9a9a9;
+    font-size: 18px;
+}
+
+nav .nav-bar .nav-links a:hover{
+    color: #808080;
+}
+
+/* home section design */
+#home-section{
+    margin: 50px 0;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .w-50{
+    margin: 0 5px;
+}
+
+.home .w-50 h1{
+    font-size: 2.5rem;
+}
+
+.home .w-50 h1 span{
+    color: #ffa500;
+}
+
+.home .w-50 p{
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.home .w-50 img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+/* women jackets and men jackets design */
+#womens-section, #mens-section{
+    margin: 50px 0;
+}
+
+#womens-section h1, #mens-section h1{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    box-shadow: 0 7px 20px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.card img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.card h2{
+    margin: 10px 0;
+}
+
+.card .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* benefits section design */
+#benefits-section{
+    margin: 50px 0;
+}
+
+#benefits-section h1{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.benefits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits .long-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.benefits .long-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 20px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.benefits .long-card img{
+    width: 15%;
+    margin: 0 20px;
+}
+
+.benefits .shopping img{
+    width: 99%;
+    display: block;
+    margin: auto;
+}
+
+/* footer design */
+footer{
+    text-align: center;
+    background-color: #0F172A;
+    color: #fff;
+    padding: 25px 0;
+}
